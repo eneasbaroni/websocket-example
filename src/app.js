@@ -76,5 +76,12 @@ io.on('connection', (socket) => {
         io.emit('updateClients')
     })
 
+    //Logica para clientsC. Acá solo manejamos el mensaje de conexión, el resto de los mensajes se manejan en el controller
+    socket.on('newUserC', (message) => {
+        console.log(message)        
+    })
+
 
 })
+
+export {io}

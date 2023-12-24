@@ -1,0 +1,25 @@
+<h1>Listado de Clientes</h1>
+
+<div id="clientsContainer">
+    {{#each clients}}
+    <div class="client">
+        <h3>{{name}}</h3>
+        <p>{{email}}</p>
+        <button id={{id}} onclick="handleDelete(event, {{id}})">Eliminar</button>
+    </div>
+    {{/each}}
+</div>
+<form id="newClient" onsubmit=handleSubmit(event)>
+    <legend>Nuevo cliente</legend>
+    <input type="text" id="name" placeholder="Nombre" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <button type="submit">Crear Cliente</button>
+
+</form>
+
+
+
+
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/clientC.js"></script>

@@ -1,7 +1,7 @@
 const socket = io()
 
 
-socket.emit('newUserA', 'Nuevo usuario conectado')//envio un mensaje al servidor para notificar la conexión
+socket.emit('newUserA', 'Nuevo usuarioA conectado')//envio un mensaje al servidor para notificar la conexión
 
 const handleSubmit = (e) => {
     e.preventDefault()
