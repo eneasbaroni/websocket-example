@@ -1,0 +1,17 @@
+<h1>Listado de Clientes</h1>
+
+<div id="clientsContainer"></div>
+<form id="newClient" onsubmit=handleSubmit(event)>
+    <legend>Nuevo cliente</legend>
+    <input type="text" id="name" placeholder="Nombre" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <button type="submit">Crear Cliente</button>
+
+</form>
+
+
+
+
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/clientA.js"></script>
