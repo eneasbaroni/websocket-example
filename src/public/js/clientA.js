@@ -1,7 +1,5 @@
 const socket = io()
 
-console.log('hola');
-
 
 socket.emit('newUserA', 'Nuevo usuario conectado')//envio un mensaje al servidor para notificar la conexión
 
